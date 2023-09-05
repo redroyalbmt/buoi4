@@ -13,7 +13,9 @@
 <body>
     <div class="container">
         <nav class="menu">
-            <ul class="menu_ul">
+           <div class="col">
+            <ul class="menu_ul"> 
+                <li><a href="">Navbar </a></li>
                 <li class="productLi"><a href="">IPHONE</a>
                     <ul class="submenu_2">
                         <!-- <li> <a href="#">IPHONE 12</a></li>
@@ -34,16 +36,18 @@
                 </li>
                 <li><a href="#"> WATCH</a></li>
                 <li><a href="#">CONTACT</a></li>
-                <li class="togglemenu">
-                    <button class="togglebtn">
-                        <i class='bx bx-menu'></i>
-                    </button>
-                </li>
+               
             </ul>
             <div class="searchbox">
                 <input type="text" class="searchIpt">
                 <button class="searchBtn">Tìm kiếm</button>
             </div>
+           </div>
+           <div class="col">
+            <button class="togglebtn" id="togglebtn">
+                <i class='bx bx-menu'></i>
+            </button>
+           </div>
         
         </nav>
         <div class="main">
@@ -225,6 +229,23 @@
         </div>
     </footer>
     </div>
+    <script>
+        const togglebtn = document.getElementById("togglebtn");
+        var count =0;
+        const menu =document.getElementsByClassName('menu')[0];
+
+        togglebtn.addEventListener("click",()=>{
+         if(count==0){
+            menu.style.height='300px';
+            count=1;
+         }else{
+            menu.style.height='40px';
+            count=0;
+         }
+           
+        })
+        
+    </script>
 </body>
 
 </html>l
