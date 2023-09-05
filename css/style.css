@@ -7,6 +7,7 @@
 .container {
     width: 100%;
 }
+/* global */
 a{
     text-decoration: none;
 }
@@ -14,7 +15,7 @@ ul{
     list-style: none;
 }
 /* PC */
-@media screen and (min-width:1181px) {
+@media screen and (min-width:1200px) {
     .togglemenu{
     display: none;
     }
@@ -326,6 +327,223 @@ ul{
     }
     
 }
+/* IP */
+@media screen and (max-width:500px){
+    .container{
+        width: 100%;
+    }
+    .togglemenu{ 
+        display: block;
+     
+
+    }
+    .togglebtn{
+        width: 100%;
+    }
+  
+    .menu{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 93% 4%;
+        background-color: black;
+        height: 40px;
+        overflow: hidden; 
+    }
+    .togglebtn:hover .menu>.col{
+        height: 400px;
+    }
+    .menu>.col.menu_ul{
+        display: grid;
+        grid-template-columns: 20% 20% 20% 15%;
+        color: white;
+    }
+    .menu_ul{
+        display: grid;
+        grid-template-columns:100%;
+
+    }
+    .menu_ul>li{
+        padding-left: 40px;
+    }
+    .menu_ul li{
+  
+    }
+    .menu_ul a{
+        color: white;
+        line-height: 40px;
+    }
+    .productLi{
+        position: relative;
+    }
+    .submenu{
+        position: absolute;
+        width: 120px;
+        display: none;
+        
+    }
+    .productLi:hover .submenu{
+        display: block;
+    }
+  
+    .submenu>li{
+        background-color: rgb(117, 117, 117);
+        padding-left: 12px;
+    }
+    .menu_ul li.togglemenu{
+        background-color: white;
+        color: black;
+        position: relative;
+    }
+    .togglebtn{
+ 
+        outline: none;
+        height: 40px;
+        border: none;
+        cursor: pointer;
+        color: white;
+        background-color:black;
+
+    }
+.searchbox{
+    width: 50%;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: 70% 30% ;
+}
+.main{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+}
+.sliderbar>ul{
+ width: 98%;
+ margin: 10px auto;
+ display: grid;
+ grid-template-columns: 49% 49%;
+ justify-content: space-around;
+}
+
+.sliderbar ul li{
+    line-height: 40px;
+    text-align: center;
+
+    border-radius: 12px;
+    border:1px solid rgb(94, 94, 94)
+}
+.sliderbar a{
+    color: rgb(24, 24, 24);
+    font-weight: bold;
+}
+.sliderbar li:hover{
+    background-color: rgb(182, 182, 182);
+}
+
+/* ..sliderbar a{
+    color: white;
+    font-weight: bold;
+}
+.sliderbar {
+    border-right: 1px solid black;
+    font-size: 19px;
+    text-align: center;
+}
+
+.sliderbar>ul {
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+.sliderbar li {
+    line-height: 40px;
+
+    margin-bottom: 10px;
+}
+
+.sliderbar li:hover {
+    background-color: rgb(255, 172, 193);
+    margin-right: 4px;
+    margin-left: 2px;
+
+}
+
+.sliderbar li:hover a {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+} */
+.main_1{
+    width: 98%;
+    margin: 0px auto;
+}
+.productitem{
+
+    margin-bottom: 20px;
+    border-radius: 7px;
+}
+.productitem:hover{
+    box-shadow: 2px 2px 2px 2px gray;
+    transition: ease-in-out .5s;
+}
+
+.main_1 .row{
+    display: grid;
+    width: 95%;
+    margin: 10px auto;
+    grid-template-columns: 100%;
+    justify-content: space-around;
+    /* margin-left: 15px; */
+}
+.main_1 .row img{
+    height: 260px;
+    margin: 0px auto;
+    margin-left: 44px;
+    width: auto;
+}
+.productitem .row:nth-child(2){
+    display: grid;
+    grid-template-columns: 100%;
+  
+}
+.productitem .row:nth-child(2) h5{
+    text-align: center;
+    font-size: 25px;
+    margin-left: 35px;
+}
+
+.productitem .row:last-child button{
+    height: 40px; 
+    border:1px solid rgb(94, 94, 94);
+    background-color: white;
+    border-radius: 13px
+}
+.productitem .row:last-child button:hover{
+    background-color: rgb(126, 126, 126);
+    font-weight: bold;
+    color: white;
+}
+.footer{
+    width: 100%;
+    background-color: black;
+    color: white;
+
+    height: 200px;
+}
+.footer .row >.col:first-child{
+    padding: 13% 27%;
+    font-size: 36px;
+    margin-left: 20px;
+}
+.footer iframe{
+    height: 200px;
+    width: 100%;
+} 
+.footer .row{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+}
+}
+    
+
 /* *IPAD mini */
 @media screen and (min-width:768px) and (max-width: 1024px){
     .container{
